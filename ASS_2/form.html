@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Food FeedbackForm</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javascript.js"></script>
+    <script src="./rating.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form onsubmit="return validationEvent()">
+            <!-- <img src="../ASS_2/logo.jpg" style="mix-blend-mode: darken; background-repeat: no-repeat; background-size: cover;"> -->
+            <h1 style="display: flex; justify-content: center;">FOOD FEEDBACK FORM</h1>
+            <h2>Name:</h2>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <h2>Email:</h2>
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+            <h2>Phone:</h2>
+            <input type="text" id="phone" placeholder="Enter Your Phonenumber" required>
+            <h2>Quality:</h2>
+            <div class="star" id="str_1" style="font-size: 40px;display: flex;justify-content: center;">
+                <i class="fa fa-star" aria-hidden="true" id="st1"></i>
+                <i class="fa fa-star" aria-hidden="true" id="st2"></i>
+                <i class="fa fa-star" aria-hidden="true" id="st3"></i>
+                <i class="fa fa-star" aria-hidden="true" id="st4"></i>
+                <i class="fa fa-star" aria-hidden="true" id="st5"></i>
+            </div>
+            <h2>Message:</h2>
+            <textarea id="message" cols="30" rows="4" placeholder="Tell Me about Your experience?"></textarea>
+
+    <!-- <div class="widget">
+         <h2>Service:</h2>
+            <fieldset>
+                <label for="radio-1">Poor</label>
+                <input type="radio" name="radio-1" id="radio-1">
+                <label for="radio-2">Good</label>
+                <input type="radio" name="radio-1" id="radio-2">
+                <label for="radio-3">Excellent</label>
+                <input type="radio" name="radio-1" id="radio-3">
+            </fieldset> -->
+            <button type="submit">send</button>
+        </form>
+    </div>
+</body>
+
+</html>
